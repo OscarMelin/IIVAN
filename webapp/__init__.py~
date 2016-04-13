@@ -1,0 +1,23 @@
+from flask import Flask, render_template, request, url_for, redirect, session
+from dbconnect import connection
+
+from wtforms import Form, TextField, validators, PasswordField, BooleanField
+from passlib.hash import sha256_crypt
+from MySQLdb import escape_string as thwart
+from functools import wraps
+
+import gc
+
+app = Flask(__name__)
+
+import webapp.views
+
+def page_not_found(e):
+    return("Request not permitted")
+
+@app.errorhandler(500)
+def page_not_found(e):
+    return("five hundred")
+
+if __name__ == "__main__":
+    app.run()
