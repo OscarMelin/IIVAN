@@ -10,11 +10,25 @@ from functools import wraps
 
 import gc
 
+import platsannonser
 
 
-@app.route("/")
+@app.route("/", methods = ["GET", "POST"])
 def homepage():
-    return render_template("main.html")
+
+    error = None
+
+    try:
+
+        query = request.form["search"]
+        result = platsannonser.search(query).text
+
+        return result
+    
+    except Exception as e:
+
+        error = str(e)
+        return render_template("main.html", error = error)
 
 @app.errorhandler(Exception)
 def exception_handler(error):
