@@ -16,5 +16,4 @@ def search(query):
 	payload = {'nyckelord': query}
 	response = requests.get(url, headers = headers, params = payload)
 
-
 	return response
