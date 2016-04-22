@@ -10,7 +10,7 @@ from functools import wraps
 
 import gc
 
-import platsannonser
+import get_job_ads
 
 
 @app.route("/", methods = ["GET", "POST"])
@@ -21,9 +21,13 @@ def homepage():
     try:
 
         query = request.form["search"]
-        ads = platsannonser.search(query)
+        ads = get_job_ads.search(query)
 
-        return render_template("main.html", ADS = ads)
+        titles = list()
+        for ad in ads:
+            titles.append(ad.ad_title)
+
+        return render_template("main.html", ADS = titles)
     
     except Exception as e:
 

@@ -1,15 +1,13 @@
 import requests
 import json
 
+from Job_ad import Job_ad
+
 #http://api.arbetsformedlingen.se/af/v0/platsannonser/matchning?nyckelord=kock
 
-url = "http://api.arbetsformedlingen.se/af/v0/platsannonser/version"
-headers = {"Accept-Language": "sv"}
-payload = {'key1': 'value1', 'key2': 'value2'}
-response = requests.get(url, headers = headers)
-
-
 def search(query):
+
+	all_ads = list()
 
 	url = "http://api.arbetsformedlingen.se/af/v0/platsannonser/matchning"
 	headers = {"Accept-Language": "sv"}
@@ -18,4 +16,13 @@ def search(query):
 
 	ads = json.loads(response)["matchningslista"]["matchningdata"]
 
-	return ads
+	for ad in ads:
+		all_ads.append(Job_ad(     \
+			ad["annonsrubrik"],    \
+			ad["yrkesbenamning"],  \
+			ad["arbetsplatsnamn"], \
+			ad["kommunnamn"],      \
+			ad["annonsurl"]       \
+			))
+	
+	return all_ads
