@@ -14,6 +14,8 @@ def search(query):
 	url = "http://api.arbetsformedlingen.se/af/v0/platsannonser/matchning"
 	headers = {"Accept-Language": "sv"}
 	payload = {'nyckelord': query}
-	response = requests.get(url, headers = headers, params = payload)
+	response = requests.get(url, headers = headers, params = payload).text
 
-	return response
+	ads = json.loads(response)["matchningslista"]["matchningdata"]
+
+	return ads

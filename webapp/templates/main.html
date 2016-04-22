@@ -26,4 +26,14 @@
     <!-- /.container -->
 </div>
 <!-- /.intro-header -->
+{{ ERROR }}
+<div class="container">
+  <div class="row">
+    <ul>
+      {% for ad in ADS %}
+      <h4> {{ ad }} </h4>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
 {% endblock %}

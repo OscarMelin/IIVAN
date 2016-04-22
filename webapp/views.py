@@ -21,14 +21,15 @@ def homepage():
     try:
 
         query = request.form["search"]
-        result = platsannonser.search(query).text
+        ads = platsannonser.search(query)
 
-        return result
+        return render_template("main.html", ADS = ads)
     
     except Exception as e:
 
         error = str(e)
-        return render_template("main.html", error = error)
+        #return error
+        return render_template("main.html", ERROR = error)
 
 @app.errorhandler(Exception)
 def exception_handler(error):
@@ -37,3 +38,4 @@ def exception_handler(error):
 @app.errorhandler(404)
 def page_not_found(e):
     return("four oh four")
+
