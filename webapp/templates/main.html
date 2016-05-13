@@ -15,8 +15,8 @@
               <span class="input-group-btn">
                 <button class="btn btn-default btn-lg" type="submit">Kör!</button>
               </span>
+            </div><!-- /input-group -->
           </form>
-          </div><!-- /input-group -->
           <hr class="intro-divider">
         </div>
       </div>
@@ -27,13 +27,28 @@
 </div>
 <!-- /.intro-header -->
 {{ ERROR }}
+
+
 <div class="container">
   <div class="row">
-    <ul>
+    <div class="col-lg-8 col-lg-offset-2">
+
       {% for ad in ADS %}
-      <h4> {{ ad }} </h4>
+      <div class="ad">
+
+        <div class="ad_logo"></div>
+        <h4> {{ ad.ad_title }} </h4>
+        <h5> {{ ad.company }} </h5>
+      
+
+
+      </div>
       {% endfor %}
-    </ul>
+
+    </div>
   </div>
 </div>
+
+
+
 {% endblock %}

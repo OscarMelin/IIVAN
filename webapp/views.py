@@ -23,11 +23,11 @@ def homepage():
         query = request.form["search"]
         ads = get_job_ads.search(query)
 
-        titles = list()
-        for ad in ads:
-            titles.append(ad.ad_title)
+        #titles = list()
+        #for ad in ads:
+        #    titles.append(ad.ad_title)
 
-        return render_template("main.html", ADS = titles)
+        return render_template("main.html", ADS = ads)
     
     except Exception as e:
 
