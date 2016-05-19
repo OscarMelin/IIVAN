@@ -21,23 +21,39 @@ h6 {
     font-weight: 700;
 }
 
+.navbar {
+    color: white;
+    background-color: #42e545;
+    height: 6%;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+}
+
+.navbar-brand {
+    font-size: 3em;
+}
+
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
+    background-image:
+    linear-gradient(
+      #4AFF4D, #90E891
+    );
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
+    padding-top: 15%;
     padding-bottom: 0%;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 7em;
 }
 
 .intro-divider {
