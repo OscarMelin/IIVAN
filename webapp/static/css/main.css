@@ -75,22 +75,25 @@ h6 {
     .navbar-default {
         background-color: transparent;
         padding: 25px 0;
-        -webkit-transition: padding .3s;
+        
+        /*-webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-        border: 0
+        */
     }
     .navbar-default .navbar-brand {
         font-size: 2em;
+        /*
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s
+        */
     }
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px
     }
     .navbar-default.navbar-shrink {
-        background-color: #222;
+        background-color: #fdfdfd;
         padding: 10px 0
     }
     .navbar-default.navbar-shrink .navbar-brand {
