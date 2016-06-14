@@ -27,7 +27,7 @@ def homepage():
         #for ad in ads:
         #    titles.append(ad.ad_title)
 
-        return render_template("main.html", ADS = ads)
+        return render_template("main_results.html", ADS = ads)
     
     except Exception as e:
 
