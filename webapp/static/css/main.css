@@ -1,17 +1,13 @@
-/*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
+/*
 * {
    outline: 1px solid red !important;
 }
-
+*/
 body,
 html {
     width: 100%;
     height: 100%;
+    background-color: #ECF0F1;
 }
 
 body,
@@ -26,8 +22,8 @@ h6 {
 }
 
 .navbar-default {
-    background-color: #222;
-    border-color: transparent
+    background-color: #2C3E50;
+    border-color: transparent;
 }
 .navbar-default .navbar-brand {
     color: #f8f8f8;
@@ -37,21 +33,21 @@ h6 {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503
+    color: #2980B9
 }
 .navbar-default .navbar-collapse {
-    border-color: rgba(255, 255, 255, .02)
+    border-color: #2C3E50;
 }
 .navbar-default .navbar-toggle {
-    background-color: #fed136;
-    border-color: #f8f8f8;
+    background-color: #E74C3C;
+    border-color: #E74C3C;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136
+    background-color: #E74C3C
 }
 .navbar-default .nav li a {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -68,7 +64,7 @@ h6 {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136
+    background-color: #E74C3C
 }
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
@@ -94,7 +90,7 @@ h6 {
         */
     }
     .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px
+        border-radius: 3px;
     }
     .navbar-default.navbar-shrink {
         background-color: #fdfdfd;
@@ -117,7 +113,7 @@ h6 {
     color: #f8f8f8;
     background-image:
     linear-gradient(
-      #00e604, #90E891
+      #2980B9, #3498DB
     );
 }
 
@@ -141,7 +137,7 @@ h6 {
 
 .ad {
     margin: 20px; 
-    background: #f8f8f8;
+    background: #E2E9F5;
 }
 
 .ad_logo {
@@ -156,19 +152,15 @@ h6 {
 }
 
 @media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
+    .intro-header {
+        padding-bottom: 30px;
     }
 
     .intro-message > h1 {
-        font-size: 3em;
+        font-size: 2.2em;
     }
 
     .intro-divider {
         width: 100%;
-    }
-
-    #top-margin {
-        margin-bottom: 51px;
     }
 }
