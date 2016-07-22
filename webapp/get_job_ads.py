@@ -1,4 +1,4 @@
-import platsannonser
+from webapp import platsannonser
 
 def search(query):
 

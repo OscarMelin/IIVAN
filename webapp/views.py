@@ -1,16 +1,16 @@
 from webapp import app
 
 from flask import Flask, render_template, request, url_for, redirect, session
-from dbconnect import connection
+#from dbconnect import connection
 
 from wtforms import Form, TextField, validators, PasswordField, BooleanField
 from passlib.hash import sha256_crypt
-from MySQLdb import escape_string as thwart
+#from MySQLdb import escape_string as thwart
 from functools import wraps
 
 import gc
 
-import get_job_ads
+from webapp import get_job_ads
 
 
 @app.route("/", methods = ["GET", "POST"])
@@ -33,7 +33,7 @@ def homepage():
 
         error = str(e)
         #return error
-        return render_template("main.html", ERROR = error)
+        return render_template("main.html", ERROR = error + "")
 
 @app.errorhandler(Exception)
 def exception_handler(error):

@@ -1,7 +1,7 @@
 import requests
 import json
 
-from Job_ad import Job_ad
+from webapp import Job_ad
 
 #http://api.arbetsformedlingen.se/af/v0/platsannonser/matchning?nyckelord=kock
 
@@ -17,7 +17,7 @@ def search(query):
 	ads = json.loads(response)["matchningslista"]["matchningdata"]
 
 	for ad in ads:
-		all_ads.append(Job_ad(     \
+		all_ads.append(Job_ad.Job_ad(     \
 			ad["annonsrubrik"],    \
 			ad["yrkesbenamning"],  \
 			ad["arbetsplatsnamn"], \
