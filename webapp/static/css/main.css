@@ -4,6 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+* {
+   outline: 1px solid red !important;
+}
+
 body,
 html {
     width: 100%;
@@ -162,5 +166,9 @@ h6 {
 
     .intro-divider {
         width: 100%;
+    }
+
+    #top-margin {
+        margin-bottom: 51px;
     }
 }
