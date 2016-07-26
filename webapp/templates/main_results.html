@@ -32,15 +32,27 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
+    <div class="col-md-8 col-lg-offset-2">
 
       {% for ad in ADS %}
       <div class="ad">
 
-        <div class="ad_logo"></div>
-        <h4> {{ ad.ad_title }} </h4>
-        <h5> {{ ad.company }} </h5>
-      
+        <div class="row">
+          <div class="col-xs-5">
+            <div class="ad_logo"></div>
+          </div>
+          <div class="col-xs-7">
+            <h5> {{ ad.ad_title }} </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <h6> {{ ad.company }} </h5>
+          </div>
+          <div class="col-xs-6">
+            <a href="{{ ad.url }}" class="btn btn-info" id="ad-btn" role="button"><span class="glyphicon glyphicon-chevron-right"></span> Läs Mer</a>
+          </div>
+        </div>
 
 
       </div>

@@ -3,6 +3,7 @@
    outline: 1px solid red !important;
 }
 */
+
 body,
 html {
     width: 100%;
@@ -135,9 +136,11 @@ h6 {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+/* Job ads */
 .ad {
     margin: 20px; 
     background: #E2E9F5;
+    border-radius: 10px;
 }
 
 .ad_logo {
@@ -146,12 +149,25 @@ h6 {
     height: 100px;
     }
 
-.ad.h4 {
-    margin-left: 100px;
-
+#ad-btn {
+    background-color: #E74C3C;
+    border-color: #E74C3C;
+    margin-left: 5px;
 }
 
+h5 {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+/* /Job ads */
+
 @media(max-width:767px) {
+
+    #main-title {
+        font-size: 24px;
+    }
+
     .intro-header {
         padding-bottom: 30px;
     }
