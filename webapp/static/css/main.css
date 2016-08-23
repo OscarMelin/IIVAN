@@ -157,7 +157,14 @@ h6 {
     background-color: #ECF0F1;
     border-radius: 5px;
     padding: 5px;
+    margin: 0px 0px 10px 0px;
+}
 
+#expand-btn {
+    margin-top: 5px;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
 /* Job ads */

@@ -16,15 +16,26 @@
             </span>
           </div><!-- /input-group -->
         </form>
-        <h5>Expandera sökning</h5>
+        <button type="button" class="btn btn-info" id="expand-btn" data-toggle="collapse" data-target="#categories">Expandera sökning</button>
       </div>
     </div>
 
     <row>
-      <div class="result-category">
+      <div class="result-category collapse" id="categories">
         <h5>Välj jobbkategori</h5>
-        
-        <div class="result-category-list">
+        <div class="result-category-list col-lg-4">
+          {% for cat in JOB_CATEGORIES%}
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> {{ cat }}
+            <br>
+          {% endfor %}
+        </div>
+        <div class="result-category-list col-lg-4">
+          {% for cat in JOB_CATEGORIES%}
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> {{ cat }}
+            <br>
+          {% endfor %}
+        </div>
+        <div class="result-category-list col-lg-4">
           {% for cat in JOB_CATEGORIES%}
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> {{ cat }}
             <br>
