@@ -136,6 +136,30 @@ h6 {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+.result-header {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #f8f8f8; 
+    background-image:
+    linear-gradient(
+      #2980B9, #3498DB
+    );
+}
+
+.result-category {
+    text-align: left;
+}
+
+.result-category-list {
+    text-align: left;
+    color: #333;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
 /* Job ads */
 .ad {
     margin: 20px; 

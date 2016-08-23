@@ -22,12 +22,9 @@ def homepage():
 
         query = request.form["search"]
         ads = get_job_ads.search(query)
+        job_categories = ['Ekonomi/juridik/inköp', 'Försäljning', 'Hotell/Resaurang', 'Industri/Tillverkning', 'IT', 'Kontor']
 
-        #titles = list()
-        #for ad in ads:
-        #    titles.append(ad.ad_title)
-
-        return render_template("main_results.html", ADS = ads)
+        return render_template("main_results.html", ADS = ads, JOB_CATEGORIES = job_categories)
     
     except Exception as e:
 
