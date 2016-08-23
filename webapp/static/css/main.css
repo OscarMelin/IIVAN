@@ -136,6 +136,17 @@ h6 {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+.intro-content {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background-image:
+    linear-gradient(
+      #2980B9, #3498DB
+    );
+}
+
 .result-header {
     padding-top: 50px;
     padding-bottom: 5px;
