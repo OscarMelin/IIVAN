@@ -17,20 +17,20 @@ from webapp import get_job_ads
 def homepage():
 
     error = None
+    job_categories = ['Ekonomi/juridik/inköp', 'Försäljning', 'Hotell/Resaurang', 'Industri/Tillverkning', 'IT', 'Kontor']
 
     try:
 
         query = request.form["search"]
         ads = get_job_ads.search(query)
-        job_categories = ['Ekonomi/juridik/inköp', 'Försäljning', 'Hotell/Resaurang', 'Industri/Tillverkning', 'IT', 'Kontor']
-
+        
         return render_template("main_results.html", ADS = ads, JOB_CATEGORIES = job_categories)
     
     except Exception as e:
 
         error = str(e)
         #return error
-        return render_template("main.html", ERROR = error + "")
+        return render_template("main.html", ERROR = error + "", JOB_CATEGORIES = job_categories)
 
 @app.errorhandler(Exception)
 def exception_handler(error):

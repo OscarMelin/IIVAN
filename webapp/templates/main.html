@@ -28,8 +28,18 @@
 
 <div class="intro-content">
   <div class="container">
-    <div class="r">
-
+    <div class="row">
+      <div class="col-lg-12">
+      <h3>Topplistor</h3>
+        <div class="intro-content-list">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Alla annonser
+          <br>
+          {% for cat in JOB_CATEGORIES%}
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> {{ cat }}
+          <br>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </div>
 </div>
