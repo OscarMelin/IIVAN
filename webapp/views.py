@@ -32,6 +32,10 @@ def homepage():
         #return error
         return render_template("main.html", ERROR = error + "", JOB_CATEGORIES = job_categories)
 
+@app.route("/omoss")
+def about():
+    return render_template("about.html")
+
 @app.errorhandler(Exception)
 def exception_handler(error):
     return repr(error)
