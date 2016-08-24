@@ -68,6 +68,17 @@
 
     {% block body %}{% endblock %}
     
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; Joble.se 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -77,8 +88,7 @@
     <!-- Plugin JavaScript -->
     <script src="{{ url_for('static', filename='js/classie.js') }}"></script>
     <script src="{{ url_for('static', filename='js/cbpAnimatedHeader.js') }}"></script>
-  </body>
-
+    </body>
 
 
 </html>
