@@ -46,7 +46,6 @@
       </div>
     </div>
 
-
     <div class="row">
       <div class="col-lg-12">
         <hr class="intro-divider">
@@ -61,30 +60,19 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 col-lg-offset-2">
-
-
+    <div class="col-lg-12 col-md-8 col-md-offset-2">
       <!-- No internet placeholder -->
       <div class="ad">
-
         <div class="row">
-          <div class="col-xs-5">
+          <div class="col-lg-3 col-xs-5">
             <div class="ad_logo"></div>
           </div>
-          <div class="col-xs-7">
+          <div class="col-lg-9 col-xs-7">
             <h5> Präst söker till Heliga Helgas församling! </h5>
+            <h6> Jalla Jesus AB </h6>
+            <a href="" class="btn btn-info" id="ad-btn" role="button"><span class="glyphicon glyphicon-chevron-right"></span> Läs Mer &amp; Ansök!</a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-6">
-            <h6> Jalla Jesus AB </h5>
-          </div>
-          <div class="col-xs-6">
-            <a href="" class="btn btn-info" id="ad-btn" role="button"><span class="glyphicon glyphicon-chevron-right"></span> Läs Mer</a>
-          </div>
-        </div>
-
-
       </div>
 
 
@@ -95,23 +83,15 @@
       <div class="ad">
 
         <div class="row">
-          <div class="col-xs-5">
+          <div class="col-lg-3 col-xs-5">
             <div class="ad_logo"></div>
           </div>
-          <div class="col-xs-7">
+          <div class="col-lg-9 col-xs-7">
             <h5> {{ ad.ad_title }} </h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6">
             <h6> {{ ad.company }} </h5>
-          </div>
-          <div class="col-xs-6">
-            <a href="{{ ad.url }}" class="btn btn-info" id="ad-btn" role="button"><span class="glyphicon glyphicon-chevron-right"></span> Läs Mer</a>
+            <a href="" class="btn btn-info" id="ad-btn" role="button"><span class="glyphicon glyphicon-chevron-right"></span> Läs Mer &amp; Ansök!</a>
           </div>
         </div>
-
-
       </div>
       {% endfor %}
 

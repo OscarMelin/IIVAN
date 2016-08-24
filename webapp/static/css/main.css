@@ -191,7 +191,6 @@ h6 {
     margin: 20px; 
     background: #E2E9F5;
     border-radius: 10px;
-    border: solid 3px #2C3E50;
     padding: 5px;
 }
 
@@ -204,8 +203,9 @@ h6 {
 #ad-btn {
     background-color: #E74C3C;
     border-color: #E74C3C;
-    margin-left: 5px;
 }
+
+/* /Job ads */
 
 h5 {
     margin-top: 10px;
@@ -222,8 +222,6 @@ footer .copyright {
     text-align: center;
     margin-bottom: 0px;
 }
-
-/* /Job ads */
 
 @media(max-width:767px) {
 
@@ -242,4 +240,29 @@ footer .copyright {
     .intro-divider {
         width: 100%;
     }
+
+    /* Job ads */
+    .ad {
+        border: dotted 0px #2C3E50;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .ad_logo {
+        border: dotted 0px #000000;
+        width: 130px;
+        height: 130px;
+        background-image: url("https://idisciple.blob.core.windows.net/idm/The-Kingdom-Promises-of-Jesus-130x130.jpg");
+        }
+    
+    #ad-btn {
+        background-color: #E74C3C;
+        border-color: #E74C3C;
+        position: absolute;
+        top: 85px;
+    }
+
+    /* /Job ads */
+
 }
