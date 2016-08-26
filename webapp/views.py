@@ -33,19 +33,26 @@ def homepage():
         #return error
         return render_template("main.html", ERROR = error + "", JOB_CATEGORIES = job_categories)
 
-@app.route("/search?q=<query>/")
 @app.route("/search/", methods = ["GET", "POST"])
-def search(query):
-    
-    try:
+def search():
 
+    try:
+        query = request.form["search"]
         ads = get_job_ads.search(query)
-        return render_template("main_results.html", ADS = ads, JOB_CATEGORIES = job_categories)
+        
+        return redirect(url_for("search", q = query))
 
     except Exception as e:
-        error = str(e)
-        return render_template("main.html", ERROR = error, JOB_CATEGORIES = job_categories)
 
+        print(str(e))
+
+        query = request.args.get("q")
+        
+        if query:
+            ads = get_job_ads.search(query)
+            return render_template("main_results.html", ADS = ads, JOB_CATEGORIES = job_categories)
+        else:
+            return render_template("main_results.html", JOB_CATEGORIES = job_categories)
 
 @app.route("/omoss/")
 def about():
