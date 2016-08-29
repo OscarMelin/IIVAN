@@ -263,9 +263,9 @@ footer .copyright {
     .promotion-banner-intro {
         width: 100%;
         float: left;
-        padding: 60px;
-        background-color: #ECF0F1;
-        text-align: left;
+        padding-bottom: 8px;
+        background-color: #2C3E50;
+        text-align: center;
     }
 
     .promotion-banner-logos {
@@ -280,8 +280,10 @@ footer .copyright {
         width: 50%;
         height: 125px;
         display: block;
-        float: left;
-        border: 1px dotted red; 
+        float: left; 
+    }
+
+    .banner-logo.glyphicon {
     }
 
     .banner-logo img {
@@ -296,13 +298,17 @@ footer .copyright {
     }
 
     .promotion-banner-title {
-        color: #2980B9;
+        color: #f8f8f8;
     }
 
     .promotion-logo-text {
         color: #3498DB;
         position: relative;
         top: 90px;
+    }
+
+    .odd-logo {
+        background-color: #d8e3f5;
     }
 
     /* Job ads */
