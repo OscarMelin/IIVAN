@@ -22,7 +22,7 @@ def search(query):
 			ad["yrkesbenamning"],  \
 			ad["arbetsplatsnamn"], \
 			ad["kommunnamn"],      \
-			ad["annonsurl"]       \
+			ad["annonsurl"]        \
 			))
 	
 	return all_ads
