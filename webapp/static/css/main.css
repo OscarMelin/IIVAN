@@ -213,6 +213,7 @@ h6 {
     background: #E2E9F5;
     border-radius: 10px;
     padding: 5px;
+    word-wrap: break-word;
 }
 
 .ad_logo {
