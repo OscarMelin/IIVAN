@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from webapp import app
 
 from flask import Flask, render_template, request, url_for, redirect, session
@@ -13,7 +15,7 @@ import gc
 from webapp import get_job_ads
 
 #Debugging var
-job_categories = ['Ekonomi/juridik/inköp', 'Försäljning', 'Hotell/Resaurang', 'Industri/Tillverkning', 'IT', 'Kontor']
+job_categories = [i.decode("utf-8") for i in 'Ekonomi/juridik/inköp', 'Försäljning', 'Hotell/Resaurang', 'Industri/Tillverkning', 'IT', 'Kontor']
 
 @app.route("/", methods = ["GET", "POST"])
 def homepage():

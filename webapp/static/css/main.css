@@ -164,7 +164,8 @@ h6 {
 }
 
 .promotion-banner-logos {
-
+    float: left;
+    width: 25%;
 }
 .banner-logo {
 
@@ -276,10 +277,10 @@ footer .copyright {
     }
 
     .promotion-banner-logos {
-        float: right;
         position: relative;
         white-space: nowrap;
         width: 100%;
+        float: none;
     }
 
     .banner-logo {
