@@ -13,7 +13,7 @@ var cbpAnimatedHeader = (function() {
 	var docElem = document.documentElement,
 		header = document.querySelector( '.navbar-default' ),
 		didScroll = false,
-		changeHeaderOn = 320;
+		changeHeaderOn = 250;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
