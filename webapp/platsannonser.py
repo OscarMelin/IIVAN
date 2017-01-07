@@ -8,7 +8,6 @@ from webapp import Job_ad
 def search(query):
 
 	all_ads = list()
-
 	url = "http://api.arbetsformedlingen.se/af/v0/platsannonser/matchning"
 	headers = {"Accept-Language": "sv"}
 	payload = {'nyckelord': query}
